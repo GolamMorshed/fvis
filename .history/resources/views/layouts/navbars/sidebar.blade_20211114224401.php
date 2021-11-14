@@ -80,17 +80,17 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-tv" style="color: #0c63bd;"></i> {{ __('Dashboard') }}
+                        <i class="fas fa-tv text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-user-cog" style="color: #0c63bd;"></i> {{ __('Admin Setting') }}
+                        <i class="fas fa-user-cog text-primary"></i> {{ __('Admin Setting') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-users-cog" style="color: #0c63bd;"></i> {{ __('Manage Staff') }}
+                        <i class="fas fa-users-cog text-primary"></i> {{ __('Manage Staff') }}
                     </a>
                 </li>
                 {{-- APPROVE FORM --}}
@@ -182,7 +182,7 @@
                 {{-- OUR SERVICES --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-our-services" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-balance-scale" style="color: #0c63bd;"></i>
+                        <i class="fas fa-balance-" style="color: #0c63bd;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Our Services') }}</span>
                     </a>
 
@@ -460,11 +460,11 @@
                 </li> --}}
             </ul>
             <!-- Divider -->
-            {{-- <hr class="my-3"> --}}
+            <hr class="my-3">
             <!-- Heading -->
-            {{-- <h6 class="navbar-heading text-muted">Documentation</h6> --}}
+            <h6 class="navbar-heading text-muted">Documentation</h6>
             <!-- Navigation -->
-            {{-- <ul class="navbar-nav mb-md-3">
+            <ul class="navbar-nav mb-md-3">
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/getting-started/overview.html">
                         <i class="ni ni-spaceship"></i> Getting started
@@ -480,7 +480,7 @@
                         <i class="ni ni-ui-04"></i> Components
                     </a>
                 </li>
-            </ul> --}}
+            </ul>
         </div>
     </div>
 </nav>

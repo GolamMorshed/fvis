@@ -80,17 +80,17 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-tv" style="color: #0c63bd;"></i> {{ __('Dashboard') }}
+                        <i class="fas fa-tv text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-user-cog" style="color: #0c63bd;"></i> {{ __('Admin Setting') }}
+                        <i class="fas fa-user-cog text-primary"></i> {{ __('Admin Setting') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-users-cog" style="color: #0c63bd;"></i> {{ __('Manage Staff') }}
+                        <i class="fas fa-users-cog"></i> {{ __('Manage Staff') }}
                     </a>
                 </li>
                 {{-- APPROVE FORM --}}

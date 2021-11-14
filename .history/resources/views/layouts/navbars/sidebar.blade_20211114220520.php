@@ -80,23 +80,23 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-tv" style="color: #0c63bd;"></i> {{ __('Dashboard') }}
+                        <i class="ni ni-tv-2 text-primary"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-user-cog" style="color: #0c63bd;"></i> {{ __('Admin Setting') }}
+                        <i class="ni ni-tv-2 text-primary"></i> {{ __('Admin Setting') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-users-cog" style="color: #0c63bd;"></i> {{ __('Manage Staff') }}
+                        <i class="ni ni-tv-2 text-primary"></i> {{ __('Manage Staff') }}
                     </a>
                 </li>
                 {{-- APPROVE FORM --}}
                 <li class="nav-item">
-                    <a class="nav-link active" href="#navbar-approve-form" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-approve-form">
-                        <i class="fas fa-clipboard-list" style="color: #0c63bd;"></i>
+                    <a class="nav-link active" href="#navbar-approve-form" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Approve Form') }}</span>
                     </a>
 
@@ -148,7 +148,7 @@
                 {{-- GALLERY --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-gallery" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-images" style="color: #0c63bd;"></i>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Gallery') }}</span>
                     </a>
 
@@ -165,7 +165,7 @@
                 {{-- OUR PARTNERS --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-our-partners" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-handshake" style="color: #0c63bd;"></i>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Our Partners') }}</span>
                     </a>
 
@@ -182,7 +182,7 @@
                 {{-- OUR SERVICES --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-our-services" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-balance-scale" style="color: #0c63bd;"></i>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Our Services') }}</span>
                     </a>
 
@@ -199,7 +199,7 @@
                 {{-- OUR PROJECTS --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-our-projects" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-project-diagram" style="color: #0c63bd;"></i>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Our Projects') }}</span>
                     </a>
 
@@ -216,7 +216,7 @@
                 {{-- MANAGE USERS --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-users" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-users" style="color: #0c63bd;"></i>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Manage Users') }}</span>
                     </a>
 
@@ -233,7 +233,7 @@
                 {{-- MANAGE CMS PAGES --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-cms-pages" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-columns" style="color: #0c63bd;"></i>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Manage CMS Pages') }}</span>
                     </a>
 
@@ -260,7 +260,7 @@
                 {{-- MANAGE TESTIMONIALS --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-testimonials" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-file-signature" style="color: #0c63bd;"></i>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Manage Testimonials') }}</span>
                     </a>
 
@@ -277,7 +277,7 @@
                 {{-- MANAGE MEMBERSHIPS --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-memberships" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-id-card" style="color: #0c63bd;"></i>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
                         <span class="nav-link-text" style="color: #939494;">{{ __('Manage Memberships') }}</span>
                     </a>
 
@@ -299,8 +299,8 @@
                 {{-- MEMBERSHIP USERS --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-membership-user" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-id-badge" style="color: #0c63bd;"></i>
-                        <span class="nav-link-text" style="color: #939494;">{{ __('Membership User(s)') }}</span>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
+                        <span class="nav-link-text" style="color: #1065a4;">{{ __('Membership User(s)') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-membership-user">
@@ -316,8 +316,8 @@
                 {{-- PROJECT USERS --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-project-user" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-project-diagram" style="color: #0c63bd;"></i>
-                        <span class="nav-link-text" style="color: #939494;">{{ __('Project User(s)') }}</span>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
+                        <span class="nav-link-text" style="color: #1065a4;">{{ __('Project User(s)') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-project-user">
@@ -333,8 +333,8 @@
                 {{-- FREE CONSULTATION --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-free-consultation" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-comments" style="color: #0c63bd;"></i>
-                        <span class="nav-link-text" style="color: #939494;">{{ __('Free Consultation') }}</span>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
+                        <span class="nav-link-text" style="color: #1065a4;">{{ __('Free Consultation') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-free-consultation">
@@ -350,8 +350,8 @@
                 {{-- CONTACT DETAILS --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-contact-details" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-id-card-alt" style="color: #0c63bd;"></i>
-                        <span class="nav-link-text" style="color: #939494;">{{ __('Contact Detail(s)') }}</span>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
+                        <span class="nav-link-text" style="color: #1065a4;">{{ __('Contact Detail(s)') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-contact-details">
@@ -367,8 +367,8 @@
                 {{-- MANAGE ENQUIRY --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-enquiry" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-file-invoice" style="color: #0c63bd;"></i>
-                        <span class="nav-link-text" style="color: #939494;">{{ __('Manage Enquiry') }}</span>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
+                        <span class="nav-link-text" style="color: #1065a4;">{{ __('Manage Enquiry') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-manage-enquiry">
@@ -384,8 +384,8 @@
                 {{-- GENERATE A-CODE --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-generate-a-code" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-plus-circle" style="color: #0c63bd;"></i>
-                        <span class="nav-link-text" style="color: #939494;">{{ __('Generate A-Code') }}</span>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
+                        <span class="nav-link-text" style="color: #1065a4;">{{ __('Generate A-Code') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-generate-a-code">
@@ -401,8 +401,8 @@
                 {{-- MANAGE MEMBERID --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-member-id" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-id-card" style="color: #0c63bd;"></i>
-                        <span class="nav-link-text" style="color: #939494;">{{ __('Manage MemberId') }}</span>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
+                        <span class="nav-link-text" style="color: #1065a4;">{{ __('Manage MemberId') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-manage-member-id">
@@ -418,8 +418,8 @@
                 {{-- NEWSLETTER --}}
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-newsletter" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
-                        <i class="fas fa-newspaper" style="color: #0c63bd;"></i>
-                        <span class="nav-link-text" style="color: #939494;">{{ __('Newsletter') }}</span>
+                        <i class="fab fa-laravel" style="color: #1065a4;"></i>
+                        <span class="nav-link-text" style="color: #1065a4;">{{ __('Newsletter') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-newsletter">
@@ -460,11 +460,11 @@
                 </li> --}}
             </ul>
             <!-- Divider -->
-            {{-- <hr class="my-3"> --}}
+            <hr class="my-3">
             <!-- Heading -->
-            {{-- <h6 class="navbar-heading text-muted">Documentation</h6> --}}
+            <h6 class="navbar-heading text-muted">Documentation</h6>
             <!-- Navigation -->
-            {{-- <ul class="navbar-nav mb-md-3">
+            <ul class="navbar-nav mb-md-3">
                 <li class="nav-item">
                     <a class="nav-link" href="https://argon-dashboard-laravel.creative-tim.com/docs/getting-started/overview.html">
                         <i class="ni ni-spaceship"></i> Getting started
@@ -480,7 +480,7 @@
                         <i class="ni ni-ui-04"></i> Components
                     </a>
                 </li>
-            </ul> --}}
+            </ul>
         </div>
     </div>
 </nav>
