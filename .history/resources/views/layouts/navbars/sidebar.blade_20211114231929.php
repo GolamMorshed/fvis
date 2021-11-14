@@ -107,7 +107,7 @@
                     <div class="collapse" id="navbar-approve-form">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link text-nowrap" href="{{ route('profile.edit') }}">
+                                <a class="nav-link te" href="{{ route('profile.edit') }}">
                                     {{ __('Approve CIS Form') }}
                                 </a>
                             </li>

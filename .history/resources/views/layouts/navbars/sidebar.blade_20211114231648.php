@@ -80,21 +80,17 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-tv" style="color: #1078ef;"></i>
-                        <span class="text-muted text-nowrap">{{ __('Dashboard') }}</span>
+                        <i class="fas fa-tv" style="color: #1078ef;"></i> {{ __('Dashboard') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-user-cog" style="color: #1078ef;"></i> 
-                        <span class="text-muted text-nowrap">{{ __('Admin Setting') }}</span>
-                        
+                        <i class="fas fa-user-cog" style="color: #1078ef;"></i> {{ __('Admin Setting') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}">
-                        <i class="fas fa-users-cog" style="color: #1078ef;"></i>
-                        <span class="text-muted text-nowrap">{{ __('Manage Staff') }}</span>
+                        <i class="fas fa-users-cog" style="color: #1078ef;"></i> {{ __('Manage Staff') }}
                     </a>
                 </li>
                 {{-- APPROVE FORM --}}
@@ -107,7 +103,7 @@
                     <div class="collapse" id="navbar-approve-form">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link text-nowrap" href="{{ route('profile.edit') }}">
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
                                     {{ __('Approve CIS Form') }}
                                 </a>
                             </li>
@@ -406,7 +402,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-member-id" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-id-card" style="color: #1078ef;"></i>
-                        <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Manage MemberId') }}</span>
+                        <span class="nav-link-text" style="color: #939494;">{{ __('Manage MemberId') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-manage-member-id">
@@ -423,7 +419,7 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="#navbar-newsletter" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-newspaper" style="color: #1078ef;"></i>
-                        <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Newsletter') }}</span>
+                        <span class="nav-link-text" style="color: #939494;">{{ __('Newsletter') }}</span>
                     </a>
 
                     <div class="collapse" id="navbar-newsletter">

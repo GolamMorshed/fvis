@@ -31,10 +31,10 @@
                             <div class="row">
                                 <div class="col">
                                     <h5 class="card-title text-uppercase text-muted mb-0">Membership User</h5>
-                                    <span class="h2 font-weight-bold mb-0">53%</span>
+                                    <span class="h2 font-weight-bold mb-0">2,356</span>
                                 </div>
                                 <div class="col-auto">
-                                    <div class="icon icon-shape bg-success text-white rounded-circle shadow">
+                                    <div class="icon icon-shape bg-warning text-white rounded-circle shadow">
                                         <i class="fas fa-percent""></i>
                                     </div>
                                 </div>
@@ -75,11 +75,11 @@
                             <div class="row">
                                 <div class="col">
                                     <h5 class="card-title text-uppercase text-muted mb-0">Unique Visitor(s)</h5>
-                                    <span class="h2 font-weight-bold mb-0">65</span>
+                                    <span class="h2 font-weight-bold mb-0">49,65%</span>
                                 </div>
                                 <div class="col-auto">
                                     <div class="icon icon-shape bg-info text-white rounded-circle shadow">
-                                        <i class="fas fa-users"></i>
+                                        <i class="fas fa-percent"></i>
                                     </div>
                                 </div>
                             </div>
