@@ -222,11 +222,11 @@
                                             <i class="fas fa-ellipsis-v"></i>
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                            <a class="dropdown-item" href="">Edit</a>
-                                        </div>
+                                        <a class="dropdown-item" href="">Edit</a>
+                                                                                            </div>
                                     </div>
                                 </td>
-                            </tr>
+                                </tr>
                         </tbody>
                     </table>
                 </div>

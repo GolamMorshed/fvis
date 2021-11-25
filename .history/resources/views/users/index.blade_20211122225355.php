@@ -76,7 +76,7 @@
         <img src="{{ asset('argon') }}/img/brand/blue.png" class="navbar-brand-img" alt="...">
     </a>
     <!-- User -->
-    <ul class="nav align-items-center d-md-none">
+    {{-- <ul class="nav align-items-center d-md-none">
         <li class="nav-item dropdown">
             <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="media align-items-center">
@@ -113,7 +113,7 @@
                 </a>
             </div>
         </li>
-    </ul>
+    </ul> --}}
 </div>
 </nav>                
     <div class="main-content">
@@ -197,7 +197,7 @@
                 </div>
                 
                 <div class="col-12">
-                </div>
+                                        </div>
 
                 <div class="table-responsive">
                     <table class="table align-items-center table-flush">
@@ -210,24 +210,24 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Admin Admin</td>
-                                <td>
-                                    <a href="mailto:admin@argon.com">admin@argon.com</a>
-                                </td>
-                                <td>12/02/2020 11:00</td>
-                                <td class="text-right">
-                                    <div class="dropdown">
-                                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                            <a class="dropdown-item" href="">Edit</a>
+                                                                <tr>
+                                    <td>Admin Admin</td>
+                                    <td>
+                                        <a href="mailto:admin@argon.com">admin@argon.com</a>
+                                    </td>
+                                    <td>12/02/2020 11:00</td>
+                                    <td class="text-right">
+                                        <div class="dropdown">
+                                            <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
+                                                                                                        <a class="dropdown-item" href="">Edit</a>
+                                                                                                </div>
                                         </div>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
+                                    </td>
+                                </tr>
+                                                        </tbody>
                     </table>
                 </div>
                 <div class="card-footer py-4">
