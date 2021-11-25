@@ -218,7 +218,7 @@
                     </div>
                 </li>
                 {{-- MANAGE USERS --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-users" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-users" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Manage Users') }}</span>
@@ -233,9 +233,9 @@
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- MANAGE CMS PAGES --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-cms-pages" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-columns" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Manage CMS Pages') }}</span>
@@ -260,9 +260,9 @@
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- MANAGE TESTIMONIALS --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-testimonials" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-file-signature" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Manage Testimonials') }}</span>
@@ -277,9 +277,9 @@
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- MANAGE MEMBERSHIPS --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-memberships" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-id-card" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Manage Memberships') }}</span>
@@ -293,15 +293,15 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('membership_reqs.view') }}">
+                                <a class="nav-link" href="{{ route('membership_reqs.') }}">
                                     {{ __('Membership Request(s)') }}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- MEMBERSHIP USERS --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-membership-user" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-id-badge" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Membership User(s)') }}</span>
@@ -310,15 +310,15 @@
                     <div class="collapse" id="navbar-membership-user">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('membership_users.view') }}">
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
                                     {{ __('Membership User') }}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- PROJECT USERS --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-project-user" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-project-diagram" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Project User(s)') }}</span>
@@ -327,15 +327,15 @@
                     <div class="collapse" id="navbar-project-user">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('project_users.view') }}">
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
                                     {{ __('Project User') }}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- FREE CONSULTATION --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-free-consultation" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-comments" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Free Consultation') }}</span>
@@ -344,15 +344,15 @@
                     <div class="collapse" id="navbar-free-consultation">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('free_consultations.view') }}">
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
                                     {{ __('Free Consultation') }}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- CONTACT DETAILS --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-contact-details" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-id-card-alt" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Contact Detail(s)') }}</span>
@@ -361,15 +361,15 @@
                     <div class="collapse" id="navbar-contact-details">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('contact_details.view') }}">
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
                                     {{ __('Contact Detail') }}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- MANAGE ENQUIRY --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-enquiry" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-file-invoice" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Manage Enquiry') }}</span>
@@ -378,15 +378,15 @@
                     <div class="collapse" id="navbar-manage-enquiry">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('enquiries.view') }}">
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
                                     {{ __('Manage Enquiry') }}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- GENERATE A-CODE --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-generate-a-code" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-plus-circle" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Generate A-Code') }}</span>
@@ -395,15 +395,15 @@
                     <div class="collapse" id="navbar-generate-a-code">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('gen_a_code.view') }}">
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
                                     {{ __('Generate A-Code') }}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- MANAGE MEMBERID --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-manage-member-id" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-id-card" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Manage MemberId') }}</span>
@@ -412,15 +412,15 @@
                     <div class="collapse" id="navbar-manage-member-id">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('member_id.view') }}">
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
                                     {{ __('Manage MemberId') }}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- NEWSLETTER --}}
-                {{-- <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link active" href="#navbar-newsletter" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-examples">
                         <i class="fas fa-newspaper" style="color: #1078ef;"></i>
                         <span class="nav-link-text text-muted" style="color: #939494;">{{ __('Newsletter') }}</span>
@@ -429,13 +429,13 @@
                     <div class="collapse" id="navbar-newsletter">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('newsletter.view') }}">
+                                <a class="nav-link" href="{{ route('profile.edit') }}">
                                     {{ __('Manage Newsletter') }}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </li> --}}
+                </li>
                 {{-- <li class="nav-item">
                     <a class="nav-link" href="{{ route('icons') }}">
                         <i class="ni ni-planet text-blue"></i> {{ __('Icons') }}

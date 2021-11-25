@@ -76,8 +76,7 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\Controllers\ProfileController@password']);
 });
 
-// New Routes - Menu Navigation(s)
-Route::get('gallery-records', ['as' => 'gallery.view', 'uses' => 'App\Http\Controllers\GalleryController@index']);
-Route::get('our-partners-records', ['as' => 'our_partners.view', 'uses' => 'App\Http\Controllers\OurPartnerController@index']);
-Route::get('our-services-records', ['as' => 'our_services.view', 'uses' => 'App\Http\Controllers\OurServiceController@index']);
-Route::get('our-projects-records', ['as' => 'our_projects.view', 'uses' => 'App\Http\Controllers\OurProjectController@index']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
