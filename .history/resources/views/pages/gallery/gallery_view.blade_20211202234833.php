@@ -207,7 +207,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <a href="{{ url('gallery-delete/'.$gal->id) }}" class="btn btn-danger">Delete</a>
+                                            <button type="button" class="btn btn-alert">{{ $gal->id }}</button>
                                         </div>
                                     </div>
                                 </div>
@@ -254,10 +254,28 @@
         </li>
     </ul>
 </div>
-</div>
-</footer>    
-</div>
+</div></footer>    </div>
     </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+        var ATTRIBUTES = ['myvalue'];
+
+        $('#deleteDialog').on('click', function (e) {
+
+            var $target = $(e.target);
+
+            var modalSelector = $target.data('target');
+
+            ATTRIBUTES.forEach(function (attributeName) {
+
+                var $modalAttribute = $(modalSelector + ' #modal-myvalue');
+                var dataValue = $target.data(attributeName);
+                $modalAttribute.text(dataValue || 'Cannot Fetch!');
+            });
+        });
+    </script>
+
+    
     <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
         <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     

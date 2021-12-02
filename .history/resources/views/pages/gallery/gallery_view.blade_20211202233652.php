@@ -188,26 +188,26 @@
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                             <a class="dropdown-item" href={{ url('gallery-update/'.$gal->id) }}>Edit</a>
-                                            <a class="dropdown-item" role="button" data-toggle="modal" data-target="#modal-delete-{{ $gal->id }}">Delete
+                                            <a class="dropdown-item" data-toggle="modal" data-id="{{$gal->id}}" data-target="#deleteDialog">Delete</a>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="modal-delete-{{ $gal->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal fade" id="deleteDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <span id="modal-myvalue">Are you sure?</span>
+                                            <span id="modal-id"></span>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <a href="{{ url('gallery-delete/'.$gal->id) }}" class="btn btn-danger">Delete</a>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
                                         </div>
                                     </div>
                                 </div>
@@ -254,10 +254,28 @@
         </li>
     </ul>
 </div>
-</div>
-</footer>    
-</div>
+</div></footer>    </div>
     </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+        var ATTRIBUTES = ['id'];
+
+        $('[data-toggle="modal"]').on('click', function (e) {
+
+            var $target = $(e.target);
+
+            var modalSelector = $target.data('target');
+
+            ATTRIBUTES.forEach(function (attributeName) {
+
+                var $modalAttribute = $(modalSelector + ' #modal-id');
+                var dataValue = $target.data(attributeName);
+                $modalAttribute.text(dataValue || 'Cannot Fetch!');
+            });
+        });
+    </script>
+
+    
     <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
         <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     

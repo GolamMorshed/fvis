@@ -188,30 +188,35 @@
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                             <a class="dropdown-item" href={{ url('gallery-update/'.$gal->id) }}>Edit</a>
-                                            <a class="dropdown-item" role="button" data-toggle="modal" data-target="#modal-delete-{{ $gal->id }}">Delete
+                                            {{-- <a class="dropdown-item" data-toggle="modal" data-id="exampleModal" href="#exampleModal" data-target="#exampleModal">Delete</a> --}}
+                                            <!-- Delete method -->
+                                            <a href="#" style="color:black; font-weight: bold;" data-href="{{ url('gallery-delete/', $gal->id) }}" class="btn btn-info btn-outline btn-circle btn-lg" data-toggle="modal" data-target="#myModal" title="Delete">Delete</a>
+                                            <!-- Delete Modal -->
+                            <div class="container">
+                                <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h4 class="modal-title">Delete !!!</h4>
+                                    </div>
+                                    <div class="modal-body text-center">
+                                        <p class="my-0 font-weight-bold">Are you sure you want to delete this data???</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        <a class="btn btn-danger btn-ok">Delete</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                                        
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="modal-delete-{{ $gal->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <span id="modal-myvalue">Are you sure?</span>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <a href="{{ url('gallery-delete/'.$gal->id) }}" class="btn btn-danger">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             @endforeach
                         </tbody>
                     </table>
@@ -254,10 +259,17 @@
         </li>
     </ul>
 </div>
-</div>
-</footer>    
-</div>
+</div></footer>    </div>
     </div>
+
+    <!-- Delete Modal JS -->
+    <script>
+        $('#myModal').on('show.bs.modal', function(e) {
+            $(this).find('.btn-ok').attr('href', $(e.relatedTarget).data('href'));
+        });
+    </script>
+
+    
     <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
         <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     

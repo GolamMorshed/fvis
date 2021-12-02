@@ -207,7 +207,7 @@
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <a href="{{ url('gallery-delete/'.$gal->id) }}" class="btn btn-danger">Delete</a>
+                                            <a href="{{ url('gallery-update/'.$gal->id) }}" class="btn btn-danger">Add Gallery</a>
                                         </div>
                                     </div>
                                 </div>

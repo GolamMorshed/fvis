@@ -188,30 +188,11 @@
                                         </a>
                                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
                                             <a class="dropdown-item" href={{ url('gallery-update/'.$gal->id) }}>Edit</a>
-                                            <a class="dropdown-item" role="button" data-toggle="modal" data-target="#modal-delete-{{ $gal->id }}">Delete
+                                            <a class="dropdown-item" data-toggle="modal" data-id="{{$gal->id}}" href="#exampleModal" data-target="#exampleModal">Delete</a>
                                         </div>
                                     </div>
                                 </td>
                             </tr>
-
-                            <!-- Modal -->
-                            <div class="modal fade" id="modal-delete-{{ $gal->id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                                <div class="modal-dialog" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h4 class="modal-title" id="myModalLabel">Delete Confirmation</h4>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <span id="modal-myvalue">Are you sure?</span>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <a href="{{ url('gallery-delete/'.$gal->id) }}" class="btn btn-danger">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             @endforeach
                         </tbody>
                     </table>
@@ -254,10 +235,17 @@
         </li>
     </ul>
 </div>
-</div>
-</footer>    
-</div>
+</div></footer>    </div>
     </div>
+
+    <script>
+        $(document).on("click", ".user_dialog", function () {
+            var UserName = $(this).data('id');
+            $(".modal-body #user_name").val( UserName );
+        });
+    </script>
+
+    
     <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
         <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     
