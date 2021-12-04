@@ -159,7 +159,7 @@
                                 <th scope="col" class="text-center">Action</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="userTable">
                             @foreach ($gallery as $gal)
                             <tr>
                                 <td>{{ $gal->id }}</td>
