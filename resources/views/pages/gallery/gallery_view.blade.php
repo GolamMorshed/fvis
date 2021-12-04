@@ -255,6 +255,21 @@
     </footer>    
 </div>
 </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+        $(document).ready(function(){
+            $.ajax({
+                url: '/gallery_view',
+                type: 'get',
+                dataType: 'JSON',
+                success: function(response){
+                    console.log('Hi');
+                },
+                error: function (jqXHR, textStatus, errorThrown){
+                    alert('Error get data from ajax');
+                }
+            });
+        });
+    </script>
     <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
     <script src="{{ asset('argon') }}/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
